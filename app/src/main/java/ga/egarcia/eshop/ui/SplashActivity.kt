@@ -1,8 +1,9 @@
-package ga.egarcia.eshop
+package ga.egarcia.eshop.ui
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import ga.egarcia.eshop.R
 
 class SplashActivity : AppCompatActivity() {
 
