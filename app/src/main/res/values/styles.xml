@@ -11,6 +11,10 @@
     <style name="store_button_style">
         <item name="android:background">@drawable/rounded_button</item>
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">@dimen/padding_small</item>
+        <item name="android:paddingRight">@dimen/padding_small</item>
+        <item name="android:paddingTop">@dimen/padding_x_small</item>
+        <item name="android:paddingBottom">@dimen/padding_x_small</item>
     </style>
 
 </resources>
