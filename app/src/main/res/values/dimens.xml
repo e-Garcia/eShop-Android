@@ -11,4 +11,5 @@
     <dimen name="spacing_normal">8dp</dimen>
     <dimen name="store_logo_size">128dp</dimen>
     <dimen name="match_constraint">0dp</dimen>
+    <dimen name="shop_banner_height">200dp</dimen>
 </resources>

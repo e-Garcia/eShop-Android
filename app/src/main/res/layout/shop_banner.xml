@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+            android:id="@+id/banner_image"
+            android:contentDescription="@string/banner_image_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shop_banner_height"
+            android:src="@drawable/shop_banner"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+            android:id="@+id/banner_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_banner_text"
+            app:layout_constraintTop_toBottomOf="@id/banner_image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

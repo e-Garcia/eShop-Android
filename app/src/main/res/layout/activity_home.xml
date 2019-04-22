@@ -12,11 +12,11 @@
             android:id="@+id/shop_logo"
             android:layout_width="@dimen/store_logo_size"
             android:layout_height="@dimen/store_logo_size"
-            app:srcCompat="@android:color/holo_red_light"
             android:layout_marginTop="@dimen/margin_large"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/shop_logo"
             android:contentDescription="@string/description_store_logo"/>
 
     <Button

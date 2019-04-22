@@ -19,7 +19,8 @@
         <activity android:name=".ui.SectionOneActivity"
                 android:label="@string/section_1">
         </activity>
-        <activity android:name=".ui.HomeActivity">
+        <activity android:name=".ui.HomeActivity"
+                android:label="@string/home_activity_title">
         </activity>
     </application>
 
