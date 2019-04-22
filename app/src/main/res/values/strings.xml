@@ -2,6 +2,7 @@
     <string name="app_name">eshop</string>
     <string name="home_activity_title">My Awesome Shop</string>
     <string name="description_store_logo">Store logo</string>
+    <string name="description_item_image">Item image</string>
     <string name="section_1">Our Story</string>
     <string name="section_2">Products</string>
     <string name="section_3">Plushies</string>

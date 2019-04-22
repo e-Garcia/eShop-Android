@@ -17,9 +17,13 @@ class HomeActivity : AppCompatActivity() {
         setupListeners()
     }
 
-    fun setupListeners() {
+    private fun setupListeners() {
         section_1.setOnClickListener {
             val intent = Intent(this, SectionOneActivity::class.java)
+            startActivity(intent)
+        }
+        section_2.setOnClickListener {
+            val intent = Intent(this, SectionTwoActivity::class.java)
             startActivity(intent)
         }
 
