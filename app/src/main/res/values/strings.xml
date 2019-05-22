@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">eshop</string>
-    <string name="our_story">OUR STORY</string>
-    <string name="flavors">Flavors</string>
+    <string name="home_activity_title">My Awesome Shop</string>
     <string name="description_store_logo">Store logo</string>
-    <string name="boxes">GIFT BOXES</string>
-    <string name="flavors">Flavors</string>
+    <string name="section_1">Our Story</string>
+    <string name="section_2">Products</string>
+    <string name="section_3">Plushies</string>
+    <string name="section_4">Shirts</string>
+    <string name="section_5">Watches</string>
+    <string name="section_6">Robots</string>
+    <string name="contact_information">www.myawesomeshop.com</string>
+    <string name="banner_image_description">Shop banner</string>
+    <string name="shop_banner_text">Products</string>
+    <string name="section_one_content">section_one_content</string>
 </resources>

@@ -5,65 +5,104 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".HomeActivity"
-        android:background="@color/background_color">
+        android:padding="@dimen/padding_normal"
+        tools:context=".ui.HomeActivity">
 
     <ImageView
+            android:id="@+id/shop_logo"
             android:layout_width="@dimen/store_logo_size"
             android:layout_height="@dimen/store_logo_size"
-            app:srcCompat="@android:color/holo_red_light"
-            android:id="@+id/shop_logo"
             android:layout_marginTop="@dimen/margin_large"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/shop_logo"
             android:contentDescription="@string/description_store_logo"/>
 
     <Button
-            android:text="@string/our_story"
-            android:layout_width="wrap_content"
+            android:id="@+id/section_1"
+            android:text="@string/section_1"
+            android:layout_width="@dimen/match_constraint"
             android:layout_height="wrap_content"
-            android:id="@+id/story"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/flavors"
+            app:layout_constraintEnd_toStartOf="@+id/section_2"
             android:layout_marginTop="@dimen/margin_large"
             app:layout_constraintTop_toBottomOf="@+id/shop_logo"
-            style="@style/store_button_style"/>
+            style="@style/store_button_style"
+            app:layout_constraintHorizontal_chainStyle="spread"/>
 
     <Button
-            android:text="@string/flavors"
-            android:layout_width="wrap_content"
+            android:id="@+id/section_2"
+            android:text="@string/section_2"
+            android:layout_width="@dimen/match_constraint"
             android:layout_height="wrap_content"
-            android:id="@+id/flavors"
-            app:layout_constraintStart_toEndOf="@+id/story"
+            app:layout_constraintStart_toEndOf="@+id/section_1"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="@dimen/margin_large"
             app:layout_constraintTop_toBottomOf="@+id/shop_logo"
-            style="@style/store_button_style"/>
+            style="@style/store_button_style"
+            android:layout_marginStart="@dimen/margin_normal"/>
 
     <Button
-            android:text="@string/boxes"
-            android:layout_width="wrap_content"
+            android:id="@+id/section_3"
+            android:text="@string/section_3"
+            android:layout_width="@dimen/match_constraint"
             android:layout_height="wrap_content"
-            android:id="@+id/boxes"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="@dimen/margin_normal"
-            app:layout_constraintTop_toBottomOf="@+id/story"
+            app:layout_constraintTop_toBottomOf="@+id/section_1"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/tins"
+            app:layout_constraintEnd_toStartOf="@+id/section_4"
             style="@style/store_button_style"/>
 
     <Button
-            android:text="@string/flavors"
-            android:layout_width="wrap_content"
+            android:id="@+id/section_4"
+            android:text="@string/section_4"
+            android:layout_width="@dimen/match_constraint"
             android:layout_height="wrap_content"
-            android:id="@+id/tins"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="@dimen/margin_normal"
-            app:layout_constraintTop_toBottomOf="@+id/flavors"
-            app:layout_constraintStart_toEndOf="@+id/boxes"
+            app:layout_constraintTop_toBottomOf="@+id/section_2"
+            app:layout_constraintStart_toEndOf="@+id/section_3"
             app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginStart="@dimen/margin_normal"
             style="@style/store_button_style"/>
+    <Button
+            android:id="@+id/section_5"
+            android:text="@string/section_5"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintTop_toBottomOf="@id/section_3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/section_6"
+            style="@style/store_button_style"/>
+
+    <Button
+            android:id="@+id/section_6"
+            android:text="@string/section_6"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margin_normal"
+            app:layout_constraintTop_toBottomOf="@+id/section_4"
+            app:layout_constraintStart_toEndOf="@+id/section_5"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginStart="@dimen/margin_normal"
+            style="@style/store_button_style"/>
+
+    <Button
+            android:id="@+id/contact"
+            android:text="@string/contact_information"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="wrap_content"
+            style="@style/store_button_style"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:lineSpacingExtra="@dimen/spacing_normal"
+            app:layout_constraintTop_toBottomOf="@+id/section_5"/>
 </android.support.constraint.ConstraintLayout>
